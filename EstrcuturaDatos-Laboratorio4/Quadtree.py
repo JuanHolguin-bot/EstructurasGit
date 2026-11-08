@@ -15,7 +15,6 @@ class Point:
         """Calcula la distancia euclidiana hacia otro punto."""
         return math.hypot(self.x - other.x, self.y - other.y)
 
-    # Alias en español
     dist = distance_to
 
     def __repr__(self):
@@ -29,7 +28,6 @@ class Point:
         return False
 
 
-# Alias de nombres
 Punto = Point
 XY = Point
 
@@ -45,7 +43,6 @@ class BoundingBox:
         self.half_width = float(half_width)
         self.half_height = float(half_height)
 
-        # Propiedades de conveniencia
         self.x = self.center_x
         self.y = self.center_y
         self.w = self.half_width
@@ -95,8 +92,6 @@ class BoundingBox:
     contiene = contains
     intersc_circulo = intersects_circle
 
-
-# Alias de clases
 Rectangulo = BoundingBox
 AABB = BoundingBox
 
@@ -280,7 +275,6 @@ class QuadTree:
     k_vecinos = k_nearest_neighbors
 
 
-# Alias de clase
 Quadtree = QuadTree
 
 
